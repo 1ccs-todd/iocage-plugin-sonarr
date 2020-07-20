@@ -2,7 +2,7 @@
 # This file contains the install script for sonarr
 
 #init jail
-initblueprint "$1"
+initplugin "$1"
 
 # Initialise defaults
 
@@ -17,4 +17,4 @@ createmount "$1" "${global_dataset_media}"/shows /mnt/shows
 iocage exec "$1" chown -R sonarr:sonarr /usr/local/share/NzbDrone /config
 iocage exec "$1" service sonarr restart
 
-exitblueprint "$1"
+exitplugin "$1"
