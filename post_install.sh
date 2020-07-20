@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 pw user add sonarr -c sonarr -u 351 -d /nonexistent -s /usr/bin/nologin
 
